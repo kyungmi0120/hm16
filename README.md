@@ -10,6 +10,6 @@ html5 class
   - HTML5 하이퍼링크 만들기
   - 파일 20개 
 
--wk03 upload
-  * 나만의 홈페이지 만들기
-  * wk03_src 파일 
+* wk03 upload
+  - 나만의 홈페이지 만들기
+  - wk03_src 파일 
