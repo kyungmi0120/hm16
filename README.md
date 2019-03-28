@@ -15,8 +15,8 @@ html5 class
   - wk03 소스파일 수정  
   
   - wk04 upload
-    -웹페이지 구조화하기
-    -figure 태그 활용
-    -details와 summary 활용
-    -로그인 폼 만들기
-    -폼 요소 활용 
+    - 웹페이지 구조화하기
+    - figure 태그 활용
+    - details와 summary 활용
+    - 로그인 폼 만들기
+    - 폼 요소 활용 
