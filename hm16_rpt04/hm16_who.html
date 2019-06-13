@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+
+<head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8">
+    <title>My Final Homepage V3</title>
+    <style>
+    </style>
+    <script>
+         var files = [
+        "media/dog.jpg",
+        "media/cat.jpg",
+        "media/라이언.jpg",
+        "media/짱구.jpg",
+      ];
+      var imgs = new Array();
+      for (var i = 0; i < files.length; i++) {
+        imgs[i] = new Image(); // 메모리에 이미지 객체 생성
+        imgs[i].src = files[i]; // 이미지 로딩
+      }
+      // 다음 이미지 출력
+      var next = 1;
+      function change(img) {
+        img.src = imgs[next].src; // 이미지 변경
+        next++; // 다음 이미지
+        next %= imgs.length; // 개수를 넘으면 처음으로
+      }
+      function init(img){
+        img.src = files[next];
+      }
+        function query(){
+            var ret = confirm("github로 이동하시겠습니까?");
+            return ret;
+        }
+        function noAction(e){
+            e.preventDefault();
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h2><a style="color: deeppink">hm16: 나는 누구인가?</a></h2>
+
+    
+        <ul>
+            <li><b>이름:</b> 김경미
+            <li><b>생일:</b> 2000년 1월 20일
+            <li><b>나이:</b> 20
+            <li><b>학번:</b> 20182556
+            <li><b>ID:</b> <a href="https://github.com/kyungmi0120/hm16" onclick ="return query()" target="_blank">kyungmi0120</a>
+            <li><b>좋아하는 이미지:</b>
+                <p>
+                        <img
+                          style="border:20px ridge rgb(184, 179, 245)"
+                          src="media/dog.jpg"
+                          alt="."
+                          width="550"
+                          height="350"
+                          onclick="change(this)"
+                          onload="init(this)"
+                        />
+                        <p id="name"></p>
+                        <p id="size"></p>
+                      </p>
+        </ul>
+
+</body>
+
+</html>
